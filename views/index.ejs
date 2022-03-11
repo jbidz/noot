@@ -13,7 +13,9 @@
     </p>
     <div class="card-btns">
         <a href="/edit/<%= note.id %>" class="edit">Edit</a>
-        <a href="#" class="delete">Delete</a>
+        <form action="/<%= note.id %>?_method=DELETE" method="POST">
+            <button class="delete">Delete</button>
+        </form>
     </div>
 </div>
 <% }) %>

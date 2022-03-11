@@ -1,8 +1,14 @@
 const mongoose = require('mongoose')
 
 const noteSchema = mongoose.Schema({
-    title: String,
-    content: String
+    title: {
+        type: String,
+        required: true
+    },
+    content: {
+        type: String,
+        required: true
+    }
 })
 
 

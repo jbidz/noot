@@ -1,4 +1,9 @@
 <div class="form-field">
+    <p class="error-message">
+        <% if(locals.message) { %>
+            <%= message %>
+        <% } %>
+    </p>
     <form action="/create" method="POST">
         <div class="form-group">
             <input type="text" name="title" id="title" placeholder="Title">

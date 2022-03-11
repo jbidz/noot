@@ -51,6 +51,10 @@ header nav ul li a:active, :focus {
     border-radius: 10px;
 }
 
+.form-field .error-message {
+    color: #D9493F;
+    padding: 0.5rem 0;
+}
 
 .form-field input[type=text] {
     width: 100%;
@@ -124,8 +128,12 @@ header nav ul li a:active, :focus {
 .note-card .card-btns a.edit {
     color:#70ADCF;
 }
-.note-card .card-btns a.delete {
+.note-card .delete {
     color: #D9493F;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    cursor: pointer;
 }
 .search-box {
     margin-bottom: 1rem;
