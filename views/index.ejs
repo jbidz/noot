@@ -1,0 +1,19 @@
+<div class="search-box">
+    <form action="/" method="GET">
+        <input type="text" name="notename" id="notename" placeholder="Search note">
+    </form>
+</div>
+<% notes.forEach(note => { %>
+<div class="note-card">
+    <span class="note-title">
+        <%= note.title %>
+    </span>
+    <p>
+        <%= note.content %>
+    </p>
+    <div class="card-btns">
+        <a href="/edit/<%= note.id %>" class="edit">Edit</a>
+        <a href="#" class="delete">Delete</a>
+    </div>
+</div>
+<% }) %>
